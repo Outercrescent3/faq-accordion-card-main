@@ -42,17 +42,19 @@ top: 300px;
 
     background-image: url(../images/bg-pattern-desktop.svg), url("../images/illustration-woman-online-desktop.svg");
     background-repeat: no-repeat;
-    background-size: 700px, 600px;
-    background-position:  -20%,  -13%;
+    background-size: 700px, 600px, 100px 100px;
+    background-position:  left center, left center;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2;
+    grid-template-rows: 25% 75%;
+    grid-column-gap: 30px;
 
 }
 .title{
     grid-column: 2;
     grid-row: 1;
+ 
    
 }
 
@@ -93,8 +95,6 @@ grid-row: 2;
 }
 
 
-
-
 .faq-answer{
     width: 450px;
     display: none;
@@ -118,3 +118,119 @@ grid-row: 2;
 .faq-answer-ative .icon{
   display: none;
 }
+
+.faq-answer-ative .faq-question{
+    font-weight: bold;
+}
+
+
+
+
+
+/* = = = = = MOBILE = = = = = =*/
+
+@media (width: 375px) {
+    
+    body{
+        font-family: 'Kumbh Sans', sans-serif;
+        background-image: linear-gradient( var(--Cor_Soft_violet) , var(--Cor_Soft_blue));
+        background-repeat: no-repeat;
+
+    
+    }
+    
+    
+    /*.box{
+    position: fixed;
+    height: 200px;
+    position: relative;
+    right: 90px;
+    top: 300px;
+    }*/
+    
+    
+    .container{
+    
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+    }
+
+    .title h2{
+        grid-row: 1;
+            font-size: 30px;
+        }
+        /*  
+        padding: 20px 0px 20px 0px;
+        
+        margin: 5% auto auto auto;
+        border-radius: 2%;
+    
+    
+        
+        
+        background-position:  -20%,  -13%;
+    
+        /*display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 25% 75%;*/
+
+    }
+
+    /*.faq-list{
+        grid-column: 2;
+        grid-row: 2;
+        
+        }
+        
+        
+        .faq-question{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            
+            width: 450px;
+            padding-bottom: 10px;
+            margin: 30px 0px 30px 0px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.219);
+           
+        
+        }
+        .icon{
+            margin-right: 30px;
+            font-size: 15px;
+            color: orange;
+        }
+        
+        
+        .faq-answer{
+            width: 450px;
+            display: none;
+        }
+        
+        .faq-answer-ative .faq-answer{
+            display: block;
+        }
+        .icon-active{
+            display: none;
+        }
+        
+        .faq-answer-ative .icon-active{
+            margin-right: 30px;
+            font-size: 15px;
+            color: orange;
+            transform: rotate(180deg);
+            display: inline;
+            
+        }
+        .faq-answer-ative .icon{
+          display: none;
+        }
+        
+        .faq-answer-ative .faq-question{
+            font-weight: bold;
+        }
+        
+
+*/
